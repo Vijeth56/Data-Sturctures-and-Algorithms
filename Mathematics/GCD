@@ -1,0 +1,18 @@
+#include <iostream>
+using namespace std;
+int GCD(int a, int b){
+    while(a!=b){
+        if(a>b)
+           a = a-b;
+        else
+           b = b-a;
+    }
+    return a;
+    
+}
+int main() {
+	int a=6, b=4;
+	int res = GCD(a, b);
+	cout<<res<<endl;
+	return 0;
+}
